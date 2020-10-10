@@ -1,0 +1,27 @@
+{
+  "name": "georgia-cake",
+  "version": "1.0.0",
+  "description": "a cake making site for Georgia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noworriesimhere/georgia-cake.git"
+  },
+  "author": "Alan tran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noworriesimhere/georgia-cake/issues"
+  },
+  "homepage": "https://github.com/noworriesimhere/georgia-cake#readme",
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  }
+}
