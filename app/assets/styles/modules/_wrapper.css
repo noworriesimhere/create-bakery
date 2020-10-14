@@ -1,0 +1,17 @@
+.wrapper {
+    padding-left: 18px;
+    padding-right: 18px;
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &--no-padding-until-medium {
+        padding-left: 0;
+        padding-right: 0;
+
+        @mixin atMedium {
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+    }
+}

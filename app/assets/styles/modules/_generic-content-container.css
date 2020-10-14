@@ -1,0 +1,26 @@
+.generic-content-container {
+    padding-left: 0;
+    padding-right: 0;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    @mixin atSmall {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    p {
+        font-weight: 300;
+        line-height: 1.65;
+        margin: 0 0 1.8rem 0;
+
+        @mixin atSmall {
+            font-size: 1.25rem;
+        }
+    }
+
+    p a {
+        font-weight: 700;
+    }
+}

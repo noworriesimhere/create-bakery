@@ -1,0 +1,34 @@
+.page-section {
+    padding: 0;
+
+    @mixin atMedium {
+        padding: 0;
+    }
+
+    &--blue {
+        background-color: $mainBlue;
+        color: #FFF;
+    }
+
+    &__image {
+        border-bottom: 10px solid $mainBlue;
+        display: block;
+    }
+
+    &--reviews {
+        background-color: $teal;
+    }
+
+    &__icon {
+        width: 5rem;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+
+        @mixin atMedium {
+            margin-right: 1rem;
+            margin-left: 0;
+            display: inline-block;
+        }
+    }
+}

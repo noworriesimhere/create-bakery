@@ -1,0 +1,86 @@
+.row {
+
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @mixin atSmall {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    @mixin atMedium {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &__medium-6 {
+        width: 100%;
+    }
+
+    &--gutters > div {
+
+        @mixin atSmall {
+            padding-left: 75px;
+            padding-right: 75px;
+        }
+
+        @mixin atMedium {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+
+    &__b-margin-until-medium {
+        margin-bottom: 2rem;
+    }
+
+    &__image {
+        display: none;
+    }
+    
+    @mixin clearfix;
+    
+    @mixin atMedium {
+        &__b-margin-until-medium {
+            margin-bottom: 0;
+        }
+
+        &__medium-4 {
+            float: left;
+            width: 33%;
+        }
+        
+        &__medium-6 {
+            float: left;
+            width: 50%;
+        }
+
+        &__image {
+            display: block;
+        }
+
+
+        &__medium-8 {
+            float: left;
+            width: 67%;
+        }
+
+        &--flex {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    /* Equal Height Rules */
+    &--equal-height-at-medium {
+        @mixin atMedium {
+            display: flex;
+
+            & > div {
+                float: none;
+                display: flex;
+            }
+        }
+    }
+}

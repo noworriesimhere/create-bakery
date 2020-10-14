@@ -1,0 +1,52 @@
+.review {
+    background-color: $mainBlue;
+    border: 5px solid white;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 0 1rem 1px 1rem;
+    margin-bottom: 5rem;
+
+    @mixin atSmall {
+        border-radius: 1rem;
+        border-left: 5px solid white;
+        border-right: 5px solid white;
+    }
+
+
+    &__photo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid white;
+        position: relative;
+        bottom: 60px;
+        margin-bottom: -80px;
+
+        @mixin atSmall {
+            width: 160px;
+            height: 160px;
+            margin-bottom: -90px;
+            right: 35px;
+        }
+
+        @mixin atMedium {
+            right: 55px;
+        }
+    }
+
+    &__title {
+        color: $mainBrown;
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: end;
+        margin: 0;
+    }
+
+    &__subtitle {
+        text-align: end;
+        font-size: 0.9375rem;
+        font-weight: 400;
+        margin: .25rem;
+    }
+}
