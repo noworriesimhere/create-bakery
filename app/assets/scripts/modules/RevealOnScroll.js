@@ -1,29 +1,25 @@
 class RevealOnScroll {
-    constructor(els, threshold) {
-        this.itemsToReveal = document.querySelectorAll(".feature-item")
+    constructor(els, rootMargin, threshold) {
+        this.itemsToReveal = els;
         this.hideInitially();
-        let observer = new IntersectionObserver((entry) => {
-            if(entry[0].isIntersecting) {
-                entry[0].target.classList.add("reveal-item--is-visible")
-            } else {
-                entry[0].target.classList.remove("reveal-item--is-visible")
-            }
-        }, {rootMargin: '0px', threshold: .9});
+        let observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.classList.add("reveal-item--is-visible")
+                } else {
+                    entry.target.classList.remove("reveal-item--is-visible")
+                }
+            });
+            }, {rootMargin: `${rootMargin}px`, threshold: threshold});
 
-        let entries = document.querySelectorAll(".feature-item");
-
-        entries.forEach(entry => {
-            observer.observe(entry);
+        this.itemsToReveal.forEach(item => {
+            observer.observe(item);
         })
     }
     hideInitially() {
         this.itemsToReveal.forEach(item => item.classList.add("reveal-item"))
     }
 }
-
-
-
-
 
 
 

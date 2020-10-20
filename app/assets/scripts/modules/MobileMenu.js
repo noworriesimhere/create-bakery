@@ -1,3 +1,5 @@
+import debounce from 'lodash/debounce'
+
 class MobileMenu {
     constructor() {
         this.menuIcon = document.querySelector(".site-header__menu-icon");
@@ -22,12 +24,12 @@ class MobileMenu {
     }
 
     resize() {
-        window.addEventListener('resize', () => {
+        window.addEventListener('resize', debounce(() => {
             if (window.innerWidth > 930 && this.menuContent.classList.contains('primary-nav__right--is-visible')) {
                 this.menuContent.classList.remove("primary-nav__right--is-visible");
                 console.log("gone!")
             }
-        })
+        }), 800)
     }
 
 }
