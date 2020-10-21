@@ -13,12 +13,16 @@
         font-weight: 500;
     }
 
-    &--blue {
+    &--brown {
         color: $mainBrown;
     }
 
     &--b-margin {
         margin-bottom: 40px;
+    }
+
+    &--no-b-padding {
+        padding-bottom: 0;
     }
 
     &__icon {
