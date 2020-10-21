@@ -14,4 +14,8 @@
             margin-right: 2rem;
         }
     }
+
+    &__small {
+        font-size: .5rem;
+    }
 }
