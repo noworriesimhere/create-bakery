@@ -6,9 +6,7 @@ class RevealOnScroll {
             entries.forEach(entry => {
                 if(entry.isIntersecting) {
                     entry.target.classList.add("reveal-item--is-visible")
-                } else {
-                    entry.target.classList.remove("reveal-item--is-visible")
-                }
+                } 
             });
             }, {rootMargin: `${rootMargin}px`, threshold: threshold});
 

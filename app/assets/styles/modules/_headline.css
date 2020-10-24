@@ -15,6 +15,10 @@
         color: $mainBrown;
     }
 
+    &--white {
+        color: #FFF;
+    }
+
     &--small {
         font-size: 1.3rem;
 
@@ -34,7 +38,7 @@
     }
 
     &--b-margin-small {
-        margin-bottom: .5em;
+        margin-bottom: 0.5em;
     }
 
     &--b-margin-large {

@@ -12,6 +12,7 @@ new RevealOnScroll(document.querySelectorAll(".review"), 0, .6);
 new DesktopMenu("my-beginning", 5, .3) //parameters: section, rootMargin, threshold
 new DesktopMenu("features", -15, .3)
 new DesktopMenu("reviews", -15, .4)
+new DesktopMenu("past-projects", -15, .4)
 
 let modal;
 
