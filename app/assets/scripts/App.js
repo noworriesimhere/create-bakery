@@ -5,9 +5,9 @@ import DesktopMenu from './modules/DesktopMenu'
 import 'lazysizes'
 
 new MobileMenu();
-new RevealOnScroll(document.querySelectorAll(".feature-item"), 0, .6);
-new RevealOnScroll(document.querySelectorAll(".headline"), 0, .6);
-new RevealOnScroll(document.querySelectorAll(".review"), 0, .6);
+new RevealOnScroll(document.querySelectorAll(".feature-item"), 0, .8);
+new RevealOnScroll(document.querySelectorAll(".headline"), 0, .8);
+new RevealOnScroll(document.querySelectorAll(".review"), 0, .8);
 
 new DesktopMenu("my-beginning", 5, .3) //parameters: section, rootMargin, threshold
 new DesktopMenu("features", -15, .3)

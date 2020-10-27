@@ -19,4 +19,10 @@ img {
 
 a {
     color: $mainBrown;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

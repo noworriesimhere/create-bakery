@@ -34,11 +34,11 @@
         position: absolute;
         top: 20px;
         right: 20px;
-        font-size: 3rem;
-        color: $mainBrown;
-        transform: scaleX(1.25);
-        transform-origin: 100% 0;
         cursor: pointer;
+        width: 3rem;
+        height: auto;
+        display: block;
+        margin: 0 auto;
 
         &:hover {
             color: $mainBlue;

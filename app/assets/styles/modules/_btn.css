@@ -1,19 +1,28 @@
 .btn {
     background-color: $mainBlue;
-    color: #FFF;
-    padding: .75rem 1.2rem;
-    display: inline-block;
-    text-decoration: none;
-
-    &--brown {
-        background-color: $mainBrown;
-    }
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 2em;
+    cursor: pointer;
+    border: 2px solid $mainBlue;
+    transition: box-shadow .25s, transform .25s ease-out, text-shadow .75s;
 
     &--large {
-        padding: 1.1rem 1.9rem;
+        padding: 1rem 2rem;
 
         @mixin atSmall {
             font-size: 1.25rem;
         }
     }
+}
+
+.btn:hover {
+    box-shadow: 0 .45em .45em -0.4em grey;
+    transform: translateY(-.25em);
+    text-shadow: 0px 2px 4px grey;
+}
+
+.btn:active {
+    transform: translateY(.5em);
+    box-shadow: 0 0 0 0 $mainBrown;
 }

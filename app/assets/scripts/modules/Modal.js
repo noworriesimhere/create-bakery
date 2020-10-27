@@ -42,7 +42,7 @@ class Modal {
             <a href="https://www.instagram.com/createbakery/" target=”_blank” class="social-icons__icon"><img src="assets/images/icons/instagram.svg" alt="Instagram"></a>
           </div>
         </div>
-        <div class="modal__close">X</div>
+        <div><img class="modal__close" src="assets/images/icons/cancel.svg"></div>
       </div>
         `)
     }
