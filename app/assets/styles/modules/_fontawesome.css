@@ -1,0 +1,7 @@
+.fontawesome {
+    color: white;
+
+    &--padding {
+        padding: .5rem 1rem;
+    }
+}
