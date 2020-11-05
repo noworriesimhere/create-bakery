@@ -164,9 +164,11 @@
         font-size: 1.3rem;
         margin: 0;
         font-weight: 300;
+        padding-right: 1.25rem;
 
         @mixin atSmall {
             font-size: 1.8rem;
+            padding-right: 0;
         }
     }
 }

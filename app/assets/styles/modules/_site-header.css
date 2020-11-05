@@ -3,10 +3,12 @@
     width: 100%;
     z-index: 2;
     background-color: $mainBlue;
+    height: 60px;
 
     &--flex {
         display: flex;
         justify-content: center;
+        height: 100%;
 
         @mixin atMedium {
             justify-content: space-between;

@@ -5,10 +5,11 @@ import DesktopMenu from './modules/DesktopMenu'
 import 'lazysizes'
 
 new MobileMenu();
-new RevealOnScroll(document.querySelectorAll(".feature-item"), 0, .8);
-new RevealOnScroll(document.querySelectorAll(".headline"), 0, .8);
-new RevealOnScroll(document.querySelectorAll(".review"), 0, .8);
+new RevealOnScroll(document.querySelectorAll(".feature-item"), 0, .5);
+new RevealOnScroll(document.querySelectorAll(".headline"), 0, .7);
+new RevealOnScroll(document.querySelectorAll(".review"), 0, .5);
 
+//Intersection Observer for changing brown navbar
 new DesktopMenu("my-beginning", 5, .3) //parameters: section, rootMargin, threshold
 new DesktopMenu("features", -15, .3)
 new DesktopMenu("reviews", -15, .4)
